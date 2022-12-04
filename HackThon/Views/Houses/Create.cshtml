@@ -4,71 +4,72 @@
     ViewData["Title"] = "Create";
 }
 
+<link rel="stylesheet" href="~/css/styleAdvert.css" asp-append-version="true" />
+
 <hr />
-<div class="row container ddd">
-    <div class="col-12 align-content-center justify-content-center">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group fff">
-                <label asp-for="HouseName" class="control-label" ></label>
-                <input asp-for="HouseName" class="form-control"  />
-                <span asp-validation-for="HouseName" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseArea" class="control-label"></label>
-                <input asp-for="HouseArea" class="form-control" />
-                <span asp-validation-for="HouseArea" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseRentPrice" class="control-label"></label>
-                <input asp-for="HouseRentPrice" class="form-control" />
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseSquare" class="control-label"></label>
-                <input asp-for="HouseSquare" class="form-control" />
-                <span asp-validation-for="HouseSquare" class="text-danger"></span>
-            </div>  
-            <div class="form-group fff">
-                <label asp-for="HouseRentType" class="control-label"></label>
-                <input asp-for="HouseRentType" class="form-control" />
-                <span asp-validation-for="HouseRentType" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseImg" class="control-label"></label>
-                <input asp-for="HouseImg" class="form-control" />
-                <span asp-validation-for="HouseImg" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HousePrice" class="control-label"></label>
-                <input asp-for="HousePrice" class="form-control" />
-                <span asp-validation-for="HousePrice" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseStreet" class="control-label"></label>
-                <input asp-for="HouseStreet" class="form-control" />
-                <span asp-validation-for="HouseStreet" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseNumber" class="control-label"></label>
-                <input asp-for="HouseNumber" class="form-control" />
-                <span asp-validation-for="HouseNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseType" class="control-label"></label>
-                <input asp-for="HouseType" class="form-control" />
-                <span asp-validation-for="HouseType" class="text-danger"></span>
-            </div>
-            <div class="form-group fff">
-                <label asp-for="HouseRoomCount" class="control-label"></label>
-                <input asp-for="HouseRoomCount" class="form-control" />
-                <span asp-validation-for="HouseRoomCount" class="text-danger"></span>
-            </div>
-            <div class="form-group bbttnn">
-                <input type="submit" value="Create" class="btn btn-primary " />
-            </div>
-        </form>
-    </div>
+<div class="mainContainier">
+    <form asp-action="Create">
+      <div class="aQQ">
+        <a href="index.html"> < Back </a>
+      </div>
+      <div class="d1">
+        <h2>Describe in detail</h2>
+        <p>Specify the name.</p>
+        <input asp-for="HouseName" type="text" placeholder="For example, my house">
+      </div>
+      <div class="d1 dd2">
+        <h2>Photo</h2>
+        <p>The first photo will be on the cover of the ad. Drag and drop to change the order of photos.</p>
+            <input asp-for="HouseImg" type="text" placeholder="link">
+      </div>
+      <div class="d1">
+            <h2>House Area</h2>
+            <p>Write the area of the city.</p>
+            <input asp-for="HouseArea" class="form-control" placeholder="Kosice - Zapad" />
+      </div>
+        <div class="d1 dd2">
+            <h2>House Rent Price</h2>
+            <p>Specify the rent price of the house.</p>
+            <input asp-for="HouseRentPrice" class="form-control" placeholder="99 999" />
+        </div>
+        <div class="d1">
+            <h2>House Square</h2>
+            <p>Specify the house square.</p>
+            <input asp-for="HouseSquare" class="form-control" placeholder="140" />
+        </div>
+        <div class="d1 dd2">
+            <h2>House Rent Type</h2>
+            <p>Specify the house rent type | for example: Rent/Buy.</p>
+            <input asp-for="HouseRentType" type="text" placeholder="Rent">
+        </div>
+        <div class="d1">
+            <h2>House Price</h2>
+            <p>Specify the price of the house.</p>
+            <input asp-for="HousePrice" type="text" placeholder="99 999">
+        </div>
+        <div class="d1 dd2">
+            <h2>House Street</h2>
+            <p>Specify the house street.</p>
+            <input asp-for="HouseStreet" type="text" placeholder="Name street">
+        </div>
+        <div class="d1 ">
+            <h2>House Number</h2>
+            <p>Specify the house number | for example: 1.</p>
+            <input asp-for="HouseNumber" type="text" placeholder="1">
+        </div>
+        <div class="d1 dd2">
+            <h2>House Type</h2>
+            <p>Specify the house type | for example: flat.</p>
+            <input asp-for="HouseType" type="text" placeholder="flat">
+        </div>
+        <div class="d1 ">
+            <h2>House Room Count</h2>
+            <p>Specify the house room count | for example: 1.</p>
+            <input asp-for="HouseRoomCount" type="text" placeholder="3">
+        </div>
+
+        <div class="form-group bbttnn">
+            <input type="submit" value="Create" class="btn btn-primary " />
+        </div>
+    </form>
 </div>
-
-
-

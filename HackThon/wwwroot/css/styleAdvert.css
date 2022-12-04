@@ -1,0 +1,121 @@
+html, body {
+    background-color: #E8E8E8;
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    height: 100%;
+    color: #363539;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+.content {
+
+}
+.mainContainier {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+.top{
+    height: 111px;
+    background-color: #002F34;
+    position: relative;
+}
+.topLeft > p{
+    margin: 0 50px;
+    position: absolute;
+    top: 50%;
+    color: white;
+    transform: translate(0, -50%);
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.topLeft{
+    width: 60%;
+}
+.topRight{
+
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+.mainTop{
+    display: flex;
+    flex-direction: row;
+}
+.topRight2{
+    color: white;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.topRight2 > button{
+    border-radius: 8px;
+    margin-left: 35px;
+}
+.topRight2 > p{
+    margin-left: 15px;
+}
+.topRight2 > img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+.content{
+    padding-bottom: 80px;
+}
+
+.aQQ{
+    padding: 20px 0 20px 0;
+}
+.aQQ > a{
+    text-decoration: none;
+    color: #363539;
+}
+
+
+.d1{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.d1 > input{
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    width: 95%;
+    margin: auto;
+    color: #146972;
+    height: 45px;
+    border-color: transparent;
+    padding-left: 10px;
+    display: flex;
+}
+
+.d1 > textarea{
+    display: flex;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    width: 95%;
+    margin: auto;
+    color: #146972;
+    height: 150px;
+    border-color: transparent;
+    padding-left: 10px;
+}
+
+.dd2{
+    margin: 15px 0 15px 0;
+}
+.dd2 > img{
+    border-radius: 10px;
+    height: 140px;
+    width: 140px;
+}

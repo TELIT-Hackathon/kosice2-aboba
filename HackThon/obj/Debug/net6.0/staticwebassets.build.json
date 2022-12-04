@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c1KRpVWeOdLG0rfuBaXwBVtsQagm+gdounSfTzVIkLg=",
+  "Hash": "rDqzUgRr4KwDPhlljVwrW3lDp4h/jbtHAY6F+DX06ik=",
   "Source": "HackThon",
   "BasePath": "_content/HackThon",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "D:\\Projects\\C#\\HackThon\\HackThon\\wwwroot\\css\\styleAdvert.css",
+      "SourceId": "HackThon",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\C#\\HackThon\\HackThon\\wwwroot\\",
+      "BasePath": "_content/HackThon",
+      "RelativePath": "css/styleAdvert.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styleAdvert.css"
     },
     {
       "Identity": "D:\\Projects\\C#\\HackThon\\HackThon\\wwwroot\\css\\styleHouseinfo.css",
