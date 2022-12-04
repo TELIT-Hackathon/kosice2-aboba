@@ -1,0 +1,105 @@
+﻿@using HackThon.Controllers
+@model IEnumerable<HackThon.Models.House>
+
+@{
+	ViewData["Title"] = "Index";
+}
+<div class="leftMain">
+	<div class="leftx">
+		<form id="opnFrm" method="post" asp-action="Index" asp-controller="Houses">
+
+			<h2 class="parametersText">parameters</h2>
+
+			<hr class="hr">
+			<p class="priceText">Price</p>
+			<div class="price">
+				<input type="number" name="minPrice" class="form-control" placeholder="0" min="0">
+				<p>-</p>
+				<input type="number" name="maxPrice" class="form-control" placeholder="100000" max="1000000" min="0" value="1000000">
+			</div>
+
+
+			<hr class="hr">
+			<p class="areaText">purchase type</p>
+			<div class="test">
+				<div class="radio-container">
+
+					<input checked class="form-control" id='contactChoice1' name='typeOfRent' type='radio' value='Rent'>
+					<label for='contactChoice1' class="r1">lease</label>
+
+					<input id='contactChoice2' class="form-control" name='typeOfRent' type='radio' value='Buy'>
+					<label for='contactChoice2' class="r2">buying</label>
+				</div>
+			</div>
+
+
+			<hr class="hr">
+			<p class="areaText">house square</p>
+			<div class="price">
+				<input type="number" name="minSquare" placeholder="0" min="0">
+				<p>-</p>
+				<input type="number" name="maxSquare" placeholder="70" min="0">
+			</div>
+
+
+			<button type="submit" class="bFind">Find</button>
+		</form>
+	</div>
+	<div class="leftxx">
+		<a asp-controller="Houses" asp-action="Create" class="btn createbtn btn-success">
+			<i class="bi bi-plus-lg text-white"></i>Create Category
+		</a>
+	</div>
+</div>
+<div class="rightx">
+
+	<div class="rightTop">
+		<form method="post" asp-controller="Houses" asp-action="Search">
+			<input class="inpFind" type="text" placeholder="find" name="searchStr">
+		</form>
+
+
+	</div>
+	<div class="rightBottom row">
+
+		@foreach (var item in Model)
+		{
+			<div class="col-sm-3">
+			
+			<div class="card">
+				<a asp-controller="Houses" asp-action="Edit" asp-route-id="@item.HouseId" style="text-decoration: none; color: black;">
+				<img class="card-img-top" src="@Html.DisplayFor(modelItem => item.HouseImg)" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">@Html.DisplayFor(modelItem => item.HouseName)</h5>
+					<div class="desc ">
+						<p>@Html.DisplayFor(modelItem => item.HouseRoomCount) izbový byt </p>
+						<p>| @Html.DisplayFor(modelItem => item.HouseSquare) m² |</p>
+						<p> prenájom</p>
+					</div>
+					<div class="desc ">
+						<p>Kosice,</p>
+						<p>@Html.DisplayFor(modelItem => item.HouseStreet)</p>
+						<p> published in</p>
+						<p> 03.12.2022</p>
+					</div>
+					<div class="desc ">
+						@if (item.HouseRentType == "Rent")
+						{
+							<h3>@Html.DisplayFor(modelItem => item.HouseRentPrice)</h3>
+							<p> € /month</p>
+						}
+						else
+						{
+							<h3>@Html.DisplayFor(modelItem => item.HousePrice)</h3>
+							<p> € </p>
+						}
+
+					</div>
+				</div>
+					</a>
+			</div>
+			
+		</div>
+		}
+	</div>
+</div>

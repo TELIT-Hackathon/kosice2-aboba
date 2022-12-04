@@ -1,0 +1,74 @@
+﻿@model HackThon.Models.House
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+<div class="row container ddd">
+    <div class="col-12 align-content-center justify-content-center">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group fff">
+                <label asp-for="HouseName" class="control-label" ></label>
+                <input asp-for="HouseName" class="form-control"  />
+                <span asp-validation-for="HouseName" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseArea" class="control-label"></label>
+                <input asp-for="HouseArea" class="form-control" />
+                <span asp-validation-for="HouseArea" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseRentPrice" class="control-label"></label>
+                <input asp-for="HouseRentPrice" class="form-control" />
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseSquare" class="control-label"></label>
+                <input asp-for="HouseSquare" class="form-control" />
+                <span asp-validation-for="HouseSquare" class="text-danger"></span>
+            </div>  
+            <div class="form-group fff">
+                <label asp-for="HouseRentType" class="control-label"></label>
+                <input asp-for="HouseRentType" class="form-control" />
+                <span asp-validation-for="HouseRentType" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseImg" class="control-label"></label>
+                <input asp-for="HouseImg" class="form-control" />
+                <span asp-validation-for="HouseImg" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HousePrice" class="control-label"></label>
+                <input asp-for="HousePrice" class="form-control" />
+                <span asp-validation-for="HousePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseStreet" class="control-label"></label>
+                <input asp-for="HouseStreet" class="form-control" />
+                <span asp-validation-for="HouseStreet" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseNumber" class="control-label"></label>
+                <input asp-for="HouseNumber" class="form-control" />
+                <span asp-validation-for="HouseNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseType" class="control-label"></label>
+                <input asp-for="HouseType" class="form-control" />
+                <span asp-validation-for="HouseType" class="text-danger"></span>
+            </div>
+            <div class="form-group fff">
+                <label asp-for="HouseRoomCount" class="control-label"></label>
+                <input asp-for="HouseRoomCount" class="form-control" />
+                <span asp-validation-for="HouseRoomCount" class="text-danger"></span>
+            </div>
+            <div class="form-group bbttnn">
+                <input type="submit" value="Create" class="btn btn-primary " />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

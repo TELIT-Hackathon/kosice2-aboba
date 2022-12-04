@@ -1,0 +1,84 @@
+﻿@model HackThon.Models.House
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+    <div class="content">
+        <div class="mainContainier">
+
+
+            <div class="mainThere">
+                <div class="mainLeft">
+                    <a asp-action="Index">Back</a>
+                    <div style="position: relative;">
+                        <div class="info1">
+                      
+                        <div class="o2" style="height: 100%">
+                            <figure class="one">
+                                <img src="@Model.HouseImg">
+                            </figure>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="info2">
+                        <p style="margin-top: 25px; margin-left: 50px">published 6 November</p>
+                        <h3 style="margin: 0 50px">@Model.HouseName</h3>
+                        <div class="desc ">
+                            <h2>@Model.HouseRentPrice</h2>
+                            <h2>€</h2>
+                            <h3>/month</h3>
+                        </div>
+                        <hr class="hr">
+                        <h2 style="margin: 30px 50px">Description</h2>
+                        <p style="margin: 0 50px; margin-bottom: 40px">Complex of 4 duplexes
+                            Instagram-houses.lutsk
+                            Families already live there.
+                            In 10 minutes walk from the "shopping center image" on the street Level.
+                            55000$85м2
+                            -3.5 c of land.
+                            2 bedrooms, living room with kitchen.
+                            The price includes
+                            -7kV of light
+                            -Centralized water and sewerage.
+                            Interior finishing
+                            -Plastering, finishing screed.
+                            -Installation of communications, electricity and internet.
+                            -Electric heating (underfloor heating, radiators)
+                            All for finishing (repair).</p>
+                    </div>
+                </div>
+                <div class="mainRight">
+                    <div class="right1">
+                        <p style="margin: 14px 25px; font-size: 16px">User infotmation</p>
+                        <div class="theright">
+                            <img class="userrrr" src="~/img/user.png">
+                            <div class="theright2">
+                                <p>
+                                    Felix
+                                </p>
+                                <p>
+                                    on Nazva.sk from 5 November 2022 online now
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bb">
+                            <button class="bb1">Show the phone number</button>
+                            <button class="bb2">Messages</button>
+                        </div>
+                        <p style="text-align: center">all ads by author ></p>
+                    </div>
+                    <div class="right2">
+                        <p style="margin: 25px ">The location </p>
+                        <div class="bbright">
+                            <img class="img1" style="width: 30px; height: 30px" src="~/img/pin-point.png">
+                            <p>Kosice, Kosice region</p>
+                            <img class="img2" style="height: 150px; width: 150px" src="~/img/map.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

@@ -1,0 +1,54 @@
+﻿@model HackThon.Models.House
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>House</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HouseName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HouseName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HousePrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HousePrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HouseStreet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HouseStreet)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HouseNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HouseNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HouseType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HouseType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HouseArea)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HouseArea)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.HouseId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HackThon</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HackThon/styles.css" asp-append-version="true" />
+</head>
+<body>
+<div class="wrapper">
+    <div>
+        <header class="topy">
+            <a class="topyA">Nazva.sk</a>
+        </header>
+    </div>
+    <div class="mainContainierx">
+           @RenderBody()
+    </div>
+</div>
+<!--<footer class="footer">-->
+<!--    <p>Dátum napísania: 22.10.2022</p>-->
+<!--</footer>-->
+</body>
+</html>
