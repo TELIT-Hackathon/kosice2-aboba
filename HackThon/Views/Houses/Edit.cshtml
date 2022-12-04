@@ -3,7 +3,9 @@
 @{
     ViewData["Title"] = "Edit";
 }
-
+<head>
+    <link rel="stylesheet" href="~/css/styleHouseinfo.css" asp-append-version="true" />
+</head>
 
     <div class="content">
         <div class="mainContainier">
@@ -11,15 +13,17 @@
 
             <div class="mainThere">
                 <div class="mainLeft">
-                    <a asp-action="Index">Back</a>
+                    <div class="aoao">
+                        <a asp-action="Index"> Go Back</a>
+                    </div>
                     <div style="position: relative;">
                         <div class="info1">
-                      
-                        <div class="o2" style="height: 100%">
-                            <figure class="one">
-                                <img src="@Model.HouseImg">
-                            </figure>
-                        </div>
+
+                            <div class="o2" style="height: 100%">
+                                <figure class="one">
+                                    <img src="@Model.HouseImg">
+                                </figure>
+                            </div>
                         </div>
                     </div>
                     <div class="info2">

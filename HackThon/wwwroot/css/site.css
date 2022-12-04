@@ -55,6 +55,7 @@ html, body {
     }
 
 .leftx {
+    z-index: 100;
     height: 750px;
     border-radius: 0 0 20px 0;
     background-color: #C9E3E5;

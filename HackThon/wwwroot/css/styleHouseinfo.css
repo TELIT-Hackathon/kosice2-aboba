@@ -118,11 +118,14 @@ html, body {
 .mainLeft{
     width: 70%;
 }
-.mainLeft > a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #575757;
+.aoao {
+    padding: 25px 0 15px 0;
 }
+.aoao > a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #575757;
+    }
 .mainRight{
     width: 30%;
 }
